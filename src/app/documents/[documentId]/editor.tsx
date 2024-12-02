@@ -9,6 +9,7 @@ import TaskItem from "@tiptap/extension-task-item";
 import TaskList from "@tiptap/extension-task-list";
 import { EditorContent, useEditor } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
+import ImageResize from "tiptap-extension-resize-image";
 
 export const Editor = () => {
     const editor = useEditor({
@@ -30,7 +31,8 @@ export const Editor = () => {
               TableRow,
               TableHeader,
               TableCell,
-              Image
+              Image,
+              ImageResize
         ],
         content: `
         <table>
