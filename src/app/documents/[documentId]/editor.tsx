@@ -8,6 +8,7 @@ import TableHeader from "@tiptap/extension-table-header";
 import TableRow from "@tiptap/extension-table-row";
 import TaskItem from "@tiptap/extension-task-item";
 import TaskList from "@tiptap/extension-task-list";
+import Underline from "@tiptap/extension-underline";
 import { EditorContent, useEditor } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import ImageResize from "tiptap-extension-resize-image";
@@ -46,6 +47,7 @@ export const Editor = () => {
             }
         },
         extensions: [
+            Underline,
             StarterKit,
             TaskList,
             TaskItem.configure({
