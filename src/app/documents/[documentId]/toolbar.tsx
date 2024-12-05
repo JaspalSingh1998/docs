@@ -3,6 +3,7 @@ import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 import useEditorStore from "@/store/use-editor-store";
 import { BoldIcon, ItalicIcon, ListTodoIcon, LucideIcon, MessageSquarePlusIcon, PrinterIcon, Redo2Icon, RemoveFormattingIcon, SpellCheckIcon, UnderlineIcon, Undo2Icon } from "lucide-react";
+import FontFamilyButton from "./components/FontFamilyButton";
 
 interface ToolbarButtonProps {
     onClick? : () => void;
@@ -101,7 +102,7 @@ const Toolbar = () => {
             ))
         }
         <Separator orientation="vertical" className="h-6 bg-neutral-300"/>
-        {/* TODO: Font Family */}
+        <FontFamilyButton />
         <Separator orientation="vertical" className="h-6 bg-neutral-300"/>
         {/* TODO: Heading */}
         <Separator orientation="vertical" className="h-6 bg-neutral-300"/>
