@@ -5,6 +5,8 @@ import useEditorStore from "@/store/use-editor-store";
 import { BoldIcon, ItalicIcon, ListTodoIcon, LucideIcon, MessageSquarePlusIcon, PrinterIcon, Redo2Icon, RemoveFormattingIcon, SpellCheckIcon, UnderlineIcon, Undo2Icon } from "lucide-react";
 import FontFamilyButton from "./components/FontFamilyButton";
 import HeadingLevelButton from "./components/HeadingLevelButton";
+import TextColorButton from "./components/TextColorButton";
+import HighlightColorButton from "./components/HighlightColorButton";
 
 interface ToolbarButtonProps {
     onClick? : () => void;
@@ -114,8 +116,8 @@ const Toolbar = () => {
                 <ToolbarButton key={item.label} {...item} />
             ))
         }
-        {/* TODO: Text Color */}
-        {/* TODO: Highlight Color */}
+        <TextColorButton />
+        <HighlightColorButton />
         <Separator orientation="vertical" className="h-6 bg-neutral-300"/>
         {/* TODO: Link */}
         {/* TODO: Image */}
