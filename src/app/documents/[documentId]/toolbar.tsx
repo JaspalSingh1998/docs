@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import useEditorStore from "@/store/use-editor-store";
 import { BoldIcon, ItalicIcon, ListTodoIcon, LucideIcon, MessageSquarePlusIcon, PrinterIcon, Redo2Icon, RemoveFormattingIcon, SpellCheckIcon, UnderlineIcon, Undo2Icon } from "lucide-react";
 import FontFamilyButton from "./components/FontFamilyButton";
+import HeadingLevelButton from "./components/HeadingLevelButton";
 
 interface ToolbarButtonProps {
     onClick? : () => void;
@@ -104,7 +105,7 @@ const Toolbar = () => {
         <Separator orientation="vertical" className="h-6 bg-neutral-300"/>
         <FontFamilyButton />
         <Separator orientation="vertical" className="h-6 bg-neutral-300"/>
-        {/* TODO: Heading */}
+        <HeadingLevelButton />
         <Separator orientation="vertical" className="h-6 bg-neutral-300"/>
         {/* TODO: Font Size */}
         <Separator orientation="vertical" className="h-6 bg-neutral-300"/>
