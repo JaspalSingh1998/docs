@@ -9,6 +9,7 @@ import TextColorButton from "./components/TextColorButton";
 import HighlightColorButton from "./components/HighlightColorButton";
 import LinkButton from "./components/LinkButton";
 import ImageButton from "./components/ImageButton";
+import AlignButton from "./components/AlignButton";
 
 interface ToolbarButtonProps {
     onClick? : () => void;
@@ -124,7 +125,7 @@ const Toolbar = () => {
         {/* TODO: Link */}
         <LinkButton />
         <ImageButton />
-        {/* TODO: Align */}
+        <AlignButton />
         {/* TODO: Line Height */}
         {/* TODO: List */}
         {
