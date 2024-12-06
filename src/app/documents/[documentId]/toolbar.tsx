@@ -10,6 +10,7 @@ import HighlightColorButton from "./components/HighlightColorButton";
 import LinkButton from "./components/LinkButton";
 import ImageButton from "./components/ImageButton";
 import AlignButton from "./components/AlignButton";
+import ListButton from "./components/ListButton";
 
 interface ToolbarButtonProps {
     onClick? : () => void;
@@ -127,7 +128,7 @@ const Toolbar = () => {
         <ImageButton />
         <AlignButton />
         {/* TODO: Line Height */}
-        {/* TODO: List */}
+        <ListButton />
         {
             sections[2].map((item) => (
                 <ToolbarButton key={item.label} {...item} />
