@@ -8,6 +8,7 @@ import HeadingLevelButton from "./components/HeadingLevelButton";
 import TextColorButton from "./components/TextColorButton";
 import HighlightColorButton from "./components/HighlightColorButton";
 import LinkButton from "./components/LinkButton";
+import ImageButton from "./components/ImageButton";
 
 interface ToolbarButtonProps {
     onClick? : () => void;
@@ -122,7 +123,7 @@ const Toolbar = () => {
         <Separator orientation="vertical" className="h-6 bg-neutral-300"/>
         {/* TODO: Link */}
         <LinkButton />
-        {/* TODO: Image */}
+        <ImageButton />
         {/* TODO: Align */}
         {/* TODO: Line Height */}
         {/* TODO: List */}
