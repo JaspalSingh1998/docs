@@ -72,7 +72,7 @@ const FontSizeButton = () => {
             setIsEditing(true);
             setFontSize(currentFontSize);
           }}
-          className="h-7 w-10 text-sm rounded-sm text-center border  border-neutral-400 bg-transparent cursor-text rounded-sm"
+          className="h-7 w-10 text-sm text-center border  border-neutral-400 bg-transparent cursor-text rounded-sm"
         >
           {currentFontSize}
         </button>
