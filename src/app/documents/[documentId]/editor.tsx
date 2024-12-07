@@ -18,6 +18,7 @@ import { Color } from '@tiptap/extension-color'
 import Highlight from '@tiptap/extension-highlight'
 import Link from "@tiptap/extension-link";
 import TextAlign from "@tiptap/extension-text-align";
+import { FontSize } from "@/extensions/FontSize";
 
 export const Editor = () => {
     const {setEditor} = useEditorStore();
@@ -60,6 +61,7 @@ export const Editor = () => {
             Color,
             TextStyle,
             FontFamily,
+            FontSize,
             TextAlign.configure({ types: ['heading', 'paragraph'] }),
             TaskList,
             TaskItem.configure({
