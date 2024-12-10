@@ -6,7 +6,7 @@ import { Building2Icon, CircleUserIcon } from "lucide-react";
 import { TableCell, TableRow } from "@/components/ui/table";
 
 import { Doc } from "../../../convex/_generated/dataModel";
-import DocumentMenu from "./document-menu";
+import { DocumentMenu } from "./document-menu";
 
 interface DocumentRowProps {
   document: Doc<"documents">;
